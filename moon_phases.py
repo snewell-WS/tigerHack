@@ -18,26 +18,34 @@ def MoonPhase():
 def determinePhase(phase):
     phaseOfMoon = "none"
     if(phase==0):
-        phaseOfMoon = "NewMoon"
-        return phaseOfMoon
+        #phaseOfMoon = "NewMoon"
+        x = 1
+        return  x
     if(phase>0 and phase<90):                 
-        phaseOfMoon = "WaxingCrescent"
-        return phaseOfMoon
+        #phaseOfMoon = "WaxingCrescent"
+        x = 2
+        return  x
     if(phase==90):        
-        phaseOfMoon = "FirstQuarter"
-        return phaseOfMoon
-    if(phase>90 and phase<180):       
-        phaseOfMoon = "WaxingGibbus"
-        return phaseOfMoon
-    if(phase==180):        
-        phaseOfMoon = "FullMoon"
-        return phaseOfMoon
-    if(phase>180 and phase<270):        
-        phaseOfMoon = "WaningGibbus"
-        return phaseOfMoon
+        x = 3
+        #phaseOfMoon = "FirstQuarter", x
+        return x
+    if(phase>90 and phase<180): 
+        x = 4      
+        #phaseOfMoon = "WaxingGibbus"
+        return  x
+    if(phase==180):  
+        x = 5      
+        #phaseOfMoon = "FullMoon" 
+        return  x
+    if(phase>180 and phase<270):   
+        x = 6     
+        #phaseOfMoon = "WaningGibbus"
+        return  x
     if(phase==270):      
-        phaseOfMoon = "ThirdQuarter"
-        return phaseOfMoon
+        x = 7
+        #phaseOfMoon = "ThirdQuarter"
+        return  x
     if(phase>270):        
-        phaseOfMoon = "WaningCrescent"
-        return phaseOfMoon
+        x = 8
+        #phaseOfMoon = "WaningCrescent"
+        return  x
